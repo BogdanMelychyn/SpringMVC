@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="base" template="/views/tiles/layout.jsp">
+		<put-attribute name="header" value="/views/tiles/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/views/tiles/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="drivers" extends="base">
+		<put-attribute name="body" value="/views/allDrivers.jsp"></put-attribute>
+		<put-attribute name="title" value="Drivers"></put-attribute>
+	</definition>
+
+	<definition name="newDriver" extends="base">
+		<put-attribute name="body" value="/views/driverNew.jsp"></put-attribute>
+		<put-attribute name="title" value="New Driver Page"></put-attribute>
+	</definition>
+	<definition name="newCarPage" extends="base">
+		<put-attribute name="body" value="/views/carNew.jsp"></put-attribute>
+		<put-attribute name="title" value="New Car Page"></put-attribute>
+	</definition>
+
+	<definition name="driverInfo" extends="base">
+		<put-attribute name="body" value="/views/driverInf.jsp"></put-attribute>
+		<put-attribute name="title" value="Driver Info"></put-attribute>
+	</definition>
+	<definition name="driverUpdatePage" extends="base">
+		<put-attribute name="body" value="/views/driverUpdatePage.jsp"></put-attribute>
+		<put-attribute name="title" value="Driver Update"></put-attribute>
+	</definition>
+	<definition name="carUpdatePage" extends="base">
+		<put-attribute name="body" value="/views/carUpdatePage.jsp"></put-attribute>
+		<put-attribute name="title" value="Driver Update"></put-attribute>
+	</definition>
+
+	<definition name="main" template="/views/main.jsp" />
+	
+	<definition name="authfail" template="/views/main.jsp" />
+
+</tiles-definitions>
